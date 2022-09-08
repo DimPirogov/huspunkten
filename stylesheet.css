@@ -6,7 +6,7 @@
 2. Body, html settings
 3. Buttons
 4. Navbar
-5.
+5. Hero section
 6.
 7.
 */
@@ -187,3 +187,42 @@ body, html{
         margin-top: 2vw;
     }
 }
+
+
+/*5. Hero section */
+
+.hero-image{
+    background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(img/hus1.jpg);
+    height:120vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+}
+
+.hero-text h1{
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.hero-image .btn{
+    margin-top: 5vw;
+}
+
+/* Adjusting image height to fit all screens on all devices, to to down */
+@media only screen and (max-width: 550px){
+    .hero-image{
+        height: 140vh;
+    }
+}
+
+/*  */
