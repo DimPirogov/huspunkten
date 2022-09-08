@@ -43,8 +43,8 @@ body, html{
 /* Above Validate 2022-09-08 10:53 */
 
 /* 3. Buttons */
-/*Button 1*/
 
+/*Button 1*/
 .btn {
     border: none;
     background-color:var(--six);
@@ -73,3 +73,72 @@ body, html{
 }
 
 /* Above Validated 2022-09-08 11:02 */
+
+/*4. Navbar*/
+
+/*Navbar with flex method*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height:8vh;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--four);
+    /*Placing objects in order/layers*/
+    z-index:999;
+    top:0;
+    left:0;
+    transition: 0.3s ease-in-out;
+}
+
+/*Logo/title settings*/
+.brand-title{
+ font-size: 1.5rem;
+ color:var(--white);
+ font-weight: bold;
+ margin-left: 2vw;
+}
+
+/*Clarify that the backround on the links is in the same color as the navbar itself*/
+.navbar-links{
+    height:100%;
+    background-color:var(--four);
+}
+
+/*Adjusting the link settings*/
+.navbar-links ul{
+    display:flex;
+    padding:0;
+    margin-top: 3vh;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: var(--white);
+    padding: 0.5rem;
+    margin:2vw;
+}
+
+.navbar-links li:hover{
+    font-weight: 900;
+    text-decoration: underline;
+}
+/*  Only visible in resposive mode, handled by JS */
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    /* Display none can be used so that it will shown at 
+    certain pixel width!! */
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+}
